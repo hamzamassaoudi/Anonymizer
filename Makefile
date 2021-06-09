@@ -1,7 +1,7 @@
 .PHONY: run run-container gcloud-deploy
 
 run:
-	@streamlit run app.py --server.port=8080 --server.address=0.0.0.0
+	@streamlit run streamlit_demo.py --server.port=8080 --server.address=0.0.0.0
 
 run-container:
 	@docker build . -t streamlit_app

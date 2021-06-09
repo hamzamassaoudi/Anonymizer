@@ -7,7 +7,7 @@ RUN pip install -U pip
 
 COPY requirements.txt app/requirements.txt
 RUN pip install -r app/requirements.txt
-RUN python3 -m spacy download fr_core_news_md
+RUN python3 -m spacy download fr_core_news_sm
 
 # copy into a directory of its own (so it isn't in the toplevel dir)
 COPY . /app

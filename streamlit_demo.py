@@ -5,7 +5,7 @@ from util import LOGO
 
 @st.cache(show_spinner=False, allow_output_mutation=True, suppress_st_warning=True)
 def load_spacy_model():
-    return spacy.load("fr_core_news_md")
+    return spacy.load("fr_core_news_sm")
 
 colors = {"Person":"#faa",
           "Location":"#fda",
